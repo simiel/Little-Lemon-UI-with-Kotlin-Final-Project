@@ -10,13 +10,15 @@ val Purple700 = Color(0xFFEE9972)
 
 private val LightColorPalette = lightColors(
     primaryVariant = Purple700,
+    primary = LittleLemonColor.yellow,
+    secondary = LittleLemonColor.pink
 )
 
 @Composable
 fun LittleLemonTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     MaterialTheme(
         colors = LightColorPalette,
-        typography = Typography,
+        typography = LittleLemonTypography,
         shapes = Shapes,
         content = content
     )
